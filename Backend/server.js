@@ -11,7 +11,6 @@ const app = express();
 
 // ====================== MIDDLEWARES ======================
 app.use(express.json());
-const cors = require('cors');
 
 // Allow requests from your Vercel frontend (or localhost during development)
 app.use(cors({
