@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api/v1',
+  // This tells Vite: "Use the Vercel URL if deployed, otherwise use localhost"
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api/v1',
 });
 
 // Request Interceptor
