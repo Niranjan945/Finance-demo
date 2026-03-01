@@ -14,8 +14,11 @@ app.use(express.json());
 
 // Allow requests from your Vercel frontend (or localhost during development)
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
-  credentials: true, // Important if you are passing cookies/tokens
+  // Use the live URL in production, or localhost during local development
+  origin: process.env.FRONTEND_URL || 'http://localhost:5173', 
+  credentials: true, // Crucial if you are passing tokens/cookies
+  methods: ['GET', 'POST', 'PUT','PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 app.use(helmet());
