@@ -1,27 +1,16 @@
-# 📈 Trading Journal Frontend
+# CryptoTrade Journal - Frontend
 
-A high-fidelity trading journal built with **React** and **Tailwind CSS**, featuring Razorpay-grade aesthetics and a robust platform control center for administrators. 
+This is the frontend client for the CryptoTrade Journal application. It is a blazing-fast Single Page Application (SPA) built with React 19 and Vite, styled with Tailwind CSS.
 
-## 🚀 Key Features
-- **Smart Auth:** Role-based access (Admin/User) powered by Context API.
-- **Unified Analytics:** Real-time P&L tracking, Win Rate calculation, and Fee monitoring.
-- **Platform Control:** Admins can view all platform trades while managing their own.
-- **Responsive Table:** Clean, interactive data views with action-based permissions.
-- **Data Export:** Download platform or personal trading history as a CSV file.
+## 🚀 Tech Stack
 
-## 💻 Tech Stack & Requirements
-
-### Prerequisites
-Before you begin, ensure you have the following installed:
-- **Node.js**: v18.0.0 or higher
-- **npm** or **yarn**: Package manager
-
-### Technologies Used
-- **Framework:** React 18 + Vite
-- **Styling:** Tailwind CSS
-- **Icons:** Lucide React
-- **HTTP Client:** Axios
-- **State Management:** React Context API & Hooks
+* **Framework:** React 19
+* **Build Tool:** Vite 7
+* **Routing:** React Router v7
+* **Styling:** Tailwind CSS
+* **HTTP Client:** Axios (with interceptors for JWT)
+* **Icons:** Lucide React
+* **Date Formatting:** date-fns
 
 ## 📂 Project Structure
 
@@ -50,3 +39,15 @@ frontend/
 ├── postcss.config.js            # CSS transformation config
 ├── tailwind.config.js           # Custom theme & styling rules
 └── README.md                    # Project documentation
+
+🏃‍♂️ Getting Started
+
+Install dependencies:
+     npm install
+
+Start the development server:
+    npm run dev
+
+Build for production:
+    npm run build
+
